@@ -1,0 +1,56 @@
+.label-login {
+    font-size: 1em;
+    padding-left: 1em;
+}
+
+.input-login {
+    font-size: .8em;
+    height: 1.5em;
+    width: 30ch;
+}
+
+.login{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.4em;
+}
+.entrar {
+    font-size: 1em;
+    margin-left: 1em;
+}
+.cadastrar {
+    display: inline-block;
+}
+
+.titulo-cad {
+    font-size: 3em;
+    padding: 2rem;
+    margin-top: 1em;
+}
+
+.cadastrar input {
+    font-size: 1em;
+    border: .01em solid #000;    
+    margin: 1em;
+    height: 1.5em;
+    padding: .3em;
+}
+
+.nome-cad {
+    display: block;
+    width: 49ch;
+}
+
+.cadastrar {
+    position: relative;
+    left: 1em;
+}
+
+.inscrever {
+    font-size: 1em;
+    height: 2em;
+    width: 10em;
+    margin: 1em;
+    
+}

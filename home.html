@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PiuPiuwer</title>
+    <link rel="icon" href="imagens/59046.png">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+</head>
+<body class="body">
+    <main>
+        <h1 class="titulo-principal">PiuPiuwer</h1> 
+        <div class="caixa-pesquisa">
+            <input class="search-txt" type="text" name="pesquisa" placeholder="Pesquisar">
+            <a class="search-b" href="#">
+                    <i class="fas fa-search"></i>
+            </a>
+        </div>
+        <div id="user" class="user">
+            <h2 id="nomePrincipal">Gabriel Akio</h2>
+            <p>"Descrição"</p>
+            <ul class="atribs">
+                <li>Pius</li>
+                <li>Seguidores</li>
+                <li>Seguindo</li>
+            </ul>
+            <span class="contadorPius">0</span>
+            <span class="contadorSeguindo">0</span>
+            <span class="contadorSeguidores">0</span>
+            <img src="imagens/perfil.jpg" alt="Foto Do Usuário" class="foto-user" id="fotoUser">
+        </div>
+
+        <table class="favoritos">
+            <thead>
+                <tr>
+                    <td>Pius Favoritos</td>
+                </tr>
+            </thead>
+
+            <tbody id="tabela-fav">
+                <tr>
+                    <td>
+                        <h2>Nome do Usuário</h2>
+                        <p>Piu favorito</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="feed">
+                <thead>
+                    <tr>
+                        <td>
+                            <form id="form-post" class="postForm">
+                                    <input id="post" class="feed-txt" type="text" name="post" placeholder="Em que está pensando?">      
+                                    <button id="botaoPostar">
+                                        <i class=" feed-b fas fa-share"></i>
+                                    </button>
+                            </form>
+                            <ul id="mensagemErro"></ul>
+                            <span id="contador" class="contador">0/140</span>
+                        </td>
+                    </tr>
+                </thead>
+    
+                <tbody id="corpo-feed">
+                    <tr class="tr-feed">
+                        <td class="td-feed">
+                            <h2 class="nome-feed">Gabriel Akio</h2>
+                            <p class="piu-feed">Testando o feed</p>
+                            <img src="imagens/perfil.jpg" alt="Foto Do Usuário" class="foto-feed">
+                           
+                            <button class="favoritar hover">
+                                <i class="fas fa-star"></i>
+                            </button>
+                            <button class="curtir hover">
+                                <i class="far fa-thumbs-up"></i>
+                            </button>   
+                            <span class="likes">0</span>
+                            <button class="icon-apagar">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="tr-feed">
+                        <td class="td-feed">
+                            <h2 class="nome-feed">Gabriel Akio</h2>
+                            <p class="piu-feed">Primeiro piu</p>
+                            <img src="imagens/perfil.jpg" alt="Foto Do Usuário" class="foto-feed">
+                           
+                            <button class="favoritar hover">
+                                <i class="fas fa-star"></i>
+                            </button>
+                            <button class="curtir hover">
+                                <i class="far fa-thumbs-up"></i>
+                            </button>   
+                            <span class="likes">0</span>
+                            <button class="icon-apagar">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </td>
+                    </tr> 
+                </tbody>
+        </table>
+
+        <table class="amigos">
+                <thead>
+                    <tr>
+                        <td>Seguindo</td>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td>
+                            <h2 class="nome-seguindo">Amigo Um</h2>
+                            <p class="desc-amigos">"Descrição do Amigo Um"</p>
+                            <img src="imagens/usuario.png" alt="Foto Do Usuário" class="foto-seguindo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Amigo Dois</h2>
+                            <p class="desc-amigos">"Descrição do Amigo Dois"</p>
+                            <img src="imagens/usuario.png" alt="Foto Do Usuário" class="foto-seguindo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Amigo Três</h2>
+                            <p class="desc-amigos">"Descrição do Amigo três"</p>
+                            <img src="imagens/usuario.png" alt="Foto Do Usuário" class="foto-seguindo">
+                        </td>
+                    </tr>
+                </tbody>
+        </table>
+        <table class="sugestao">
+                <thead>
+                    <tr>
+                        <td>Sugestões</td>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td>
+                            <h2>Sugestão Um</h2>
+                            <p class="desc-amigos">"Descrição da Sugestão Um"</p>
+                            <a href="#"><i class="fas fa-plus add"></i></a>
+                            <img src="imagens/usuario.png" alt="Foto Do Usuário" class="foto-seguindo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Sugestão Dois</h2>
+                            <p class="desc-amigos">"Descrição da Sugestão Dois"</p>
+                            <a href="#"><i class="fas fa-plus add"></i></a>
+                            <img src="imagens/usuario.png" alt="Foto Do Usuário" class="foto-seguindo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Sugestão Três</h2>
+                            <p class="desc-amigos">"Descrição da Sugestão Três"</p>
+                            <a href="#"><i class="fas fa-plus add"></i></a>
+                            <img src="imagens/usuario.png" alt="Foto Do Usuário" class="foto-seguindo">
+                        </td>
+                    </tr>
+                </tbody>
+        </table>
+    </main>
+    <aside class="navegacao">
+        <nav>
+            <ul>
+                <li><a class="nav" href="home.html">Pagina Inicial</a></li>
+                <li><a class="nav" href="perfil.html">Perfil</a></li>
+                <li><a class="nav" href="">Notificações</a></li>
+                <li><a class="nav" href="">Configurações</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <script src="js/escrevePiu.js"></script>
+    <script src="js/removerPiu.js"></script>
+    <script src="js/sistema.js"></script>
+    <script src="js/like.js"></script>
+    <script src="js/favoritar.js"></script>
+</body>
+</html>

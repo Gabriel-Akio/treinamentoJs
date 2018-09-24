@@ -1,0 +1,421 @@
+main {
+    float: left;
+    width:100%;
+}
+
+.body {
+    font-family: "Arial", "Crimson Text", "Times New Roman", serif;
+    background-color: rgb(198, 235, 248);
+    line-height: 1.5em;  
+}
+.search-b {
+    color: #000;
+    float: right;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.search-txt {
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0;
+    float: left;
+    margin-left: 5px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 240px;   
+}
+.caixa-pesquisa {
+    position: absolute;
+    top: 1.25em;
+    left: 15%;
+    height: 20px;
+    width: 300px;
+    padding: .25em;
+    background: #FFF;
+    border-radius: 2.5em;
+    border: 0.1em solid black;    
+}
+
+h1 {
+    color: white;
+} 
+
+.titulo-principal {
+    text-align:left;
+    color: #FFF;
+    background-color: #1AD;
+    border-bottom: .05em solid black;
+    padding: 1.5em;
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+    text-indent: 1.875em;
+    font-size: 1em;
+    height: 1.3em;
+    text-shadow: .1em .1em #000;
+}
+
+.user {
+    border: .05em solid rgba(202, 199, 199, 0.966);
+    background-color: rgb(239, 243, 242);
+    margin: .6em;
+    padding: 3em;
+    width: 27%;
+    height: 8.5em;
+    box-sizing: border-box;
+    float:left;
+    position: relative;
+    text-align: center;
+}
+
+.foto-user {
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    border: .1em solid black;
+    border-radius: 45px;
+    width: 90px;
+    height: 90px;
+    background: #000;
+}
+
+.user h2 {
+    font-size: 1.5em;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+}
+
+.user p {
+    position: absolute;
+    top: 33%;
+    left: 40%;
+    font-size: 1em;
+}
+
+.atribs {
+    position: absolute;
+    bottom: 1.5em;
+    left: 7em;
+    font-size: 1em;
+}
+.atribs li {
+    display: inline-block;
+    padding-left: 1.5em;
+}
+
+.contadorPius {
+    position: absolute;
+    bottom: .3em;
+    left: 36%;
+    font-size: .8em;
+}
+
+.contadorSeguindo {
+    position: absolute;
+    bottom: .3em;
+    left: 82%;
+    font-size: .8em;
+}
+
+.contadorSeguidores {
+    position: absolute;
+    bottom: .3em;
+    left: 58%;
+    font-size: .8em;
+}
+
+.nav {
+    color: #FFF;
+    font-size: 1.1em;
+}
+
+.navegacao li {
+    display: inline;
+    padding: 1.5em;
+}
+
+.navegacao {
+    position: absolute;
+    top: .4em;
+    right: 15%;
+    color: #FFF;
+    font-size: 1em;
+    text-shadow: .1em .1em #000;
+    padding: 1em;
+    float: right;
+}
+
+.favoritos {
+    font-size: 1em;
+    padding: 3em;
+    position: absolute;
+    top: 13.5em;
+    margin: .6em;
+    box-sizing: border-box;
+    width: 27%;
+}
+
+thead td {
+    background-color: #1AD;
+    color: #FFF;
+    text-shadow: .05em .05em black;
+    font-size: 1.5em;
+    border: .05em solid black;
+    padding: .5em;
+    text-indent: .5em;
+    position: relative;
+}
+
+tbody td {
+    border: .05em solid rgba(202, 199, 199, 0.966);
+    background-color: rgb(239, 243, 242);
+    height: 7em;
+    position: relative;
+}
+
+td h2 {
+    padding-top: 1em;
+    text-indent: 1em;
+    font-size: 1.25em;
+}
+
+td p {
+    padding: 1em;
+    position: relative;
+    bottom: .5em;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+.feed {
+    margin-top: .6em;
+    width: 45%;
+}
+
+.feed thead td {
+    padding: .25em;
+}
+
+.postForm {
+    height: 20px;
+    width: 20em;
+    padding: .25em;
+    background: #FFF;
+    border-radius: 2.5em;
+    border: 0.1em solid black;  
+    position: relative;
+    left: 3.5em;  
+}
+
+.feed-txt {
+    outline: none;
+    border: none;
+    background: #FFF;
+    padding: 0;
+    float: left;
+    margin-left: 5px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 28em;   
+}
+
+.feed-b {
+    color: rgb(80, 76, 76);
+    float: right;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.favoritar:hover {
+    color: rgb(236, 236, 14);
+}
+
+.amigos {
+    position: absolute;
+    top: 4.4rem;
+    width: 25.5%;
+    right: 0;
+    margin: .6rem;
+    
+}
+
+.amigos tbody td {
+    height: 5rem;
+}
+
+.amigos tbody td h2 {
+    text-indent: 4.5em;
+    font-size: 1.25em;
+}
+
+
+.desc-amigos {
+    font-size: 1em;
+    text-indent: 5.5em;
+
+}
+
+.sugestao {
+    position: absolute;
+    right: 0;
+    top: 27em;
+    margin: .6em;
+    width: 25.5%;
+
+}
+
+.sugestao tbody td {
+    height: 5rem;
+}
+
+.sugestao tbody td h2 {
+    text-indent: 4.5em;
+    font-size: 1.25em;
+}
+
+
+.add {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: .6em;
+    color: #aaa;
+}
+
+.contador {
+    position: absolute;
+    font-size: .7em;
+    top: .65em;
+    right: 1.5em;
+    margin: .1em;
+}
+
+.foto-feed {
+    position: absolute;
+    top: 13%;
+    left: 1em;
+    border: 100px;
+    width: 3.5em;
+    height: 3.5em;
+    background-color: black;
+    border: .05em solid black;
+    border-radius: 1.75em;
+}
+
+.foto-seguindo {
+    position: absolute;
+    top: 13%;
+    left: 1em;
+    border: 100px;
+    width: 3.3em;
+    height: 3.3em;
+    background-color: rgb(71, 62, 62);
+    border: .05em solid black;
+    border-radius: 1.75em;
+}
+
+.nome-feed {
+    margin-left: 8ch;
+}
+
+.piu-feed {
+    margin-left:10ch; 
+}
+
+.favoritar {
+    position: relative;
+    bottom: .5em;
+    left: 5em;
+    color: rgb(184, 194, 189);
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
+    width: 0;
+}
+
+.curtir {
+    position: relative;
+    bottom: .5em;
+    left: .1em;
+    color: rgb(184, 194, 189);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.curtir:hover {
+    color: blue;
+}
+
+.likes {
+    color: rgb(184, 194, 189);
+    position: absolute;
+    font-size: .9em;
+    bottom: .4em;
+    left: 3em;
+}
+
+.icon-apagar {
+    position: absolute;
+    top: .5em;
+    right: .7em;
+    color: rgb(184, 194, 189);
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+.fadeOut{
+    opacity:0;
+    transition: 0.5s;
+}
+
+#botaoPostar {
+    background: none;
+    border:none;
+    outline: none;
+    position: absolute;
+    right: .3em;
+    
+}
+
+.td-feed {
+    height: 3em;
+}
+
+.mensagemDeErro {
+    font-size: .8em;
+    text-align: center;
+    color: rgb(165, 13, 13);
+    text-shadow: .05em .05em black;
+    margin: .3em;
+
+}
+
+.excessoChar {
+    color: rgb(165, 13, 13);
+    text-shadow: .05em .05em black;
+}
+
+.fundoExcesso {
+    background: rgb(250, 250, 180);
+}
+
