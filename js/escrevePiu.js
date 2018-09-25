@@ -45,6 +45,7 @@ botaoPostar.addEventListener("click", function(event){
     mensagensErro.innerHTML = "";
 });
 
+
 function validaPiu(piu) {
 
     var erros = [];
@@ -89,12 +90,12 @@ function adicionaPiu(piu) {
 function montaTr(piu) {
     var piuTr = document.createElement("tr");
     piuTr.classList.add("tr-feed");
-    piuTr.appendChild(montaTd(piu.message, "td-feed", piu.user, piu.imgUrl));
+    piuTr.appendChild(montaTd( "td-feed", piu.message, piu.user, piu.imgUrl));
 
     return piuTr;
 }
 
-function montaTd(piuFrase, classe, name, fotoPerfil) {
+function montaTd(classe, piuFrase, name, fotoPerfil) {
     var td = document.createElement("td");
     td.classList.add(classe);
 
@@ -115,31 +116,66 @@ function montaTd(piuFrase, classe, name, fotoPerfil) {
     var botaoFavoritar = document.createElement("button");
     botaoFavoritar.classList.add("favoritar");
     botaoFavoritar.classList.add("hover");
+    botaoFavoritar.addEventListener("click", function() {
+        var tabelaFav = document.querySelector("#tabela-fav");
+
+        var nome = td.querySelector(".nome-feed");
+        var piu = td.querySelector(".piu-feed");
+        
+        var trFav = document.createElement("tr");
+        var tdFav = document.createElement("td");
+        var h2Fav = document.createElement("h2");
+        var pFav = document.createElement("p");
+
+        h2Fav.textContent = nome.textContent;
+        pFav.textContent = piu.textContent;
+
+        tdFav.appendChild(h2Fav);
+        tdFav.appendChild(pFav);
+
+        trFav.appendChild(tdFav);
+        
+        var primeiroFav = tabelaFav.querySelector("tr:first-child");
+        tabelaFav.insertBefore(trFav, primeiroFav);        
+    });
 
     var estrela = document.createElement("i");
     estrela.classList.add("fas");
     estrela.classList.add("fa-star");
 
+
     var botaoCurtir = document.createElement("button");
     botaoCurtir.classList.add("curtir");
     botaoCurtir.classList.add("hover");
+    botaoCurtir.addEventListener("click", function() {
+        var contador = td.querySelector(".likes");
+        var numero = parseInt(contador.textContent) + 1;
+        contador.textContent = numero;
+    });
 
     var thumbup = document.createElement("i");
     thumbup.classList.add("fa-thumbs-up");
     thumbup.classList.add("far");
 
+    var likes = document.createElement("span");
+    likes.classList.add("likes");
+    likes.textContent = "0";
+
     var botaoApagar = document.createElement("button");
     botaoApagar.classList.add("icon-apagar");
+    botaoApagar.addEventListener("click", function() {
+        td.classList.add("fadeOut"); 
+        setTimeout(function() {
+            td.remove();
+        }, 500);
+
+    });
 
     var apagar = document.createElement("i");
     apagar.classList.add("fas");
     apagar.classList.add("fa-times");
     
-
-    var likes = document.createElement("span");
-    likes.classList.add("likes");
-    likes.textContent = "0";
-
+    
     td.appendChild(imagem);
     td.appendChild(nome);
     td.appendChild(frase);
