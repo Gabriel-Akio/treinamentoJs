@@ -25,8 +25,8 @@ main {
 .search-b {
     color: rgb(77, 75, 75);
     float: right;
-    width: 20px;
-    height: 20px;
+    width: 1.25em;
+    height: 1.25em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,17 +39,17 @@ main {
     background: none;
     padding: 0;
     float: left;
-    margin-left: 5px;
-    font-size: 16px;
-    line-height: 20px;
-    width: 240px;   
+    margin-left: 0.31em;
+    font-size: 1em;
+    line-height: 1.25em;
+    width: 15em;   
 }
 .caixa-pesquisa {
     position: absolute;
     top: 1.25em;
     left: 15%;
-    height: 20px;
-    width: 300px;
+    height: 1.25em;
+    width: 19em;
     padding: .25em;
     background: #FFF;
     border-radius: 2.5em;
@@ -88,12 +88,12 @@ h1 {
 
 .foto-user {
     position: absolute;
-    top: 17px;
-    left: 17px;
+    top: 1.06em;
+    left: 1.06em;
     
     border-radius: 45px;
-    width: 90px;
-    height: 90px;
+    width: 5.625em;
+    height: 5.625em;
     background: #000;
 }
 
@@ -225,7 +225,7 @@ em {
 }
 
 .postForm {
-    height: 20px;
+    height: 1.25rem;
     width: 20em;
     padding: .25em;
     background: #FFF;
@@ -241,17 +241,17 @@ em {
     background: #FFF;
     padding: 0;
     float: left;
-    margin-left: 5px;
-    font-size: 16px;
-    line-height: 20px;
+    margin-left: .31rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
     width: 28em;   
 }
 
 .feed-b {
     color: rgb(80, 76, 76);
     float: right;
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -332,7 +332,7 @@ em {
     position: absolute;
     top: 13%;
     left: 1em;
-    border: 100px;
+    border: 6.25em;
     width: 3.5em;
     height: 3.5em;
     background-color: black;
@@ -344,7 +344,7 @@ em {
     position: absolute;
     top: 13%;
     left: 1em;
-    border: 100px;
+    border: 6.25em;
     width: 3.3em;
     height: 3.3em;
     background-color: rgb(71, 62, 62);
@@ -357,7 +357,7 @@ em {
 }
 
 .piu-feed {
-    margin-left:10ch; 
+    margin-left: 10ch; 
 }
 
 .favoritar {
@@ -427,14 +427,14 @@ em {
     font-size: .8em;
     text-align: center;
     color: rgb(165, 13, 13);
-    text-shadow: .05em .05em black;
+    text-shadow: .03em .03em black;
     margin: .3em;
 
 }
 
 .excessoChar {
     color: rgb(165, 13, 13);
-    text-shadow: .05em .05em black;
+    text-shadow: .03em .03em black;
 }
 
 .fundoExcesso {
